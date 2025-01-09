@@ -86,9 +86,7 @@ input {
   min-width: 0;
 }
 
-#format {
-  min-width: 0;
-}
+
 
 input[type='radio'] {
   accent-color: rgb(82, 109, 228);
@@ -217,6 +215,12 @@ button:hover {
 @media screen and (max-width: 978px) {
   .container {
     width: 90%;
+    height: 90vh;
+    justify-content: space-around;
+  }
+
+  .form-a {
+    bottom: -1000px;
   }
 
   .bundler {
@@ -224,7 +228,8 @@ button:hover {
   }
 
   .title {
-    width: min-content;
+    width: fit-content;
+    top: -55px;
   }
 }
 

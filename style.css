@@ -11,6 +11,7 @@
   font-family: 'Inter';
   font-size: 14px;
   font-weight: 300;
+  min-width: 0px;  
 }
 
 .margin-bottom {
@@ -78,10 +79,24 @@ body {
 .radio-section {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+input {
+  min-width: 0;
+}
+
+#format {
+  min-width: 0;
 }
 
 input[type='radio'] {
   accent-color: rgb(82, 109, 228);
+}
+
+.radio-option {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .radio-option label {
@@ -93,12 +108,14 @@ input[type='radio'] {
   display: flex;
   gap: 1em;
   padding: 1em;
+  flex-wrap: wrap;
 }
 
 .select-section {
   display: flex;
   flex-direction: column;
   flex: auto;
+  margin
 }
 
 label {
@@ -108,6 +125,7 @@ label {
 
 select {
   color: rgb(70, 69, 69);
+  min-width: 0;
 }
 
 .column-container {
@@ -194,6 +212,19 @@ button:hover {
   flex: auto;
   display: flex;
   flex-direction: column;
-  
+}
+
+@media screen and (max-width: 978px) {
+  .container {
+    width: 90%;
+  }
+
+  .bundler {
+    flex-wrap: wrap;
+  }
+
+  .title {
+    width: min-content;
+  }
 }
 

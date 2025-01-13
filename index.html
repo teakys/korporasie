@@ -10,17 +10,17 @@
 
   <form class="form-a">
     <div class="test">
-      <input type="radio" id="associado" value="associado" name="user">
-      <label for="associado">ASSOCIADO</label>
+      <input type="radio" id="associado-test" value="associado" name="user">
+      <label for="associado-test">ASSOCIADO</label>
     </div>
 
     <div class="test">
-      <input type="radio" id="entidade" name="user" value="entidade">
-      <label for="entidade">ENTIDADE</label>
+      <input type="radio" id="entidade-test" name="user" value="entidade">
+      <label for="entidade-test">ENTIDADE</label>
     </div>
 
     <div class="test">
-      <input type="radio" id="admin" name="user" value="admin">
+      <input type="radio" id="admin" name="user" value="admin" checked>
       <label for="admin">ADMIN</label>
     </div>
 
@@ -31,7 +31,7 @@
     <h2 class="title">FILTRO DE OCORRÊNCIA</h2>
 
     <fieldset class="radio-modelo margin-bottom">
-      <div class="label-section">MODELOS DE RELATÓRIO</div>
+      <h2 class="label-section">MODELOS DE RELATÓRIO</h2>
 
       <div class="radio-section">
 
@@ -122,17 +122,17 @@
       <div class="bundler-2">
         <div class="flex-item">
           <label for="data-inicio">DATA INICIAL:</label>
-          <input type="date" name="data-inicio" id="data-inicio" >
+          <input class="date" type="date" name="data-inicio" id="data-inicio" >
         </div>
 
         <div class="flex-item">
           <label for="data-final">DATA FINAL:</label>
-          <input type="date" name="data-final" id="data-final">
+          <input class="date" type="date" name="data-final" id="data-final">
         </div>
 
         <div class="flex-item">
-          <label for="cpf">CLIENTE(CPF/CNPJ):</label>
-          <input id="format" maxlength="14" type="text" placeholder="xxx.xxx.xxx-xx">
+          <label for="format">CLIENTE(CPF/CNPJ):</label>
+          <input id="format" maxlength="14" type="text" placeholder="xxx.xxx.xxx-xx" required>
         </div>
         
       </div>
@@ -151,7 +151,7 @@
       </div>
 
       <div class="admin-flex">
-        <label for="atendente">ATENDENTE</label>
+        <label for="atendente">ATENDENTE:</label>
         <select name="atendente" id="atendente">
           <option value="todos-admin">TODOS</option>
           <option value="10850-system02">10850 - SYSTEM02</option>

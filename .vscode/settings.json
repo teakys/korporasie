@@ -1,18 +1,32 @@
 {
   "sqltools.connections": [
     {
-      "mysqlOptions": {
-        "authProtocol": "default",
-        "enableSsl": "Disabled"
-      },
-      "previewLimit": 50,
-      "server": "localhost",
-      "port": 3306,
-      "driver": "MySQL",
-      "name": "test",
-      "database": "airbnb",
-      "username": "root",
-      "password": "root"
+        "mysqlOptions": {
+            "authProtocol": "default",
+            "enableSsl": "Disabled"
+        },
+        "previewLimit": 50,
+        "server": "localhost",
+        "port": 3306,
+        "driver": "MySQL",
+        "name": "test",
+        "database": "airbnb",
+        "username": "root",
+        "password": "root"
+    },
+    {
+        "mysqlOptions": {
+            "authProtocol": "default",
+            "enableSsl": "Disabled"
+        },
+        "previewLimit": 50,
+        "server": "localhost",
+        "port": 3306,
+        "driver": "MySQL",
+        "name": "korporasie",
+        "database": "korporasie",
+        "username": "root",
+        "password": "root"
     }
-  ]
+]
 }
